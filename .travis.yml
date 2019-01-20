@@ -1,0 +1,9 @@
+language: java
+
+notifications:
+  email:
+    - admin@zac-h.co.uk
+  on_failure: always
+
+script:
+  - ./gradlew test build
