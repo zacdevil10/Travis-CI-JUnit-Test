@@ -11,3 +11,12 @@ before_install:
 
 script:
   - ./gradlew test build
+
+deploy:
+  provider: releases
+  file: build/libs/Travis-CI-JUnit-Test.jar
+  overwrite: true
+  on:
+    repo: zacdevil10/Travis-CI-JUnit-Test
+    branch: master
+    tags: true

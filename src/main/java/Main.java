@@ -1,6 +1,6 @@
-public class Main {
+class Main {
 
-    public int add(int a, int b) {
+    int add(int a, int b) {
         return a + b;
     }
 
