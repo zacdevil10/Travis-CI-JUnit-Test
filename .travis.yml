@@ -5,6 +5,8 @@ notifications:
     - admin@zac-h.co.uk
   on_failure: always
 
+after_success: gradle sonarqube -Dsonar.organization=zacdevil10-github -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=$SONAR_KEY
+
 before_install:
   - chmod +x gradlew
   - chmod +x gradle/wrapper/gradle-wrapper.jar
