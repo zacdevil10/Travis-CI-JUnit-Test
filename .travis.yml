@@ -11,8 +11,7 @@ before_install:
   - chmod +x gradlew
   - chmod +x gradle/wrapper/gradle-wrapper.jar
 
-script:
-  - ./gradlew test build
+
 
 deploy:
   provider: releases
