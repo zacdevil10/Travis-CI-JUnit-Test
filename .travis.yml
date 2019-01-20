@@ -16,6 +16,8 @@ deploy:
   provider: releases
   file: build/libs/Travis-CI-JUnit-Test.jar
   overwrite: true
+  tag_name: $TRAVIS_TAG
+  target_commitish: $TRAVIS_COMMIT
   on:
     repo: zacdevil10/Travis-CI-JUnit-Test
     branch: master
