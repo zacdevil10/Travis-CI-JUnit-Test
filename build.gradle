@@ -6,6 +6,8 @@ plugins {
 group 'uk.co.zac-h'
 version '0.1'
 
+jar.archiveName = "${jar.baseName}.${jar.extension}"
+
 sourceCompatibility = 1.8
 
 repositories {
